@@ -19,6 +19,7 @@ public class RetryService {
     @Retryable(value = { Exception.class }, maxAttempts = 3, backoff = @Backoff(delay = 500))
     public void update(Person p) {
         count++;
+        System.out.println("testing");
         System.out.println("Attempting operation..."+count);
         if(count ==4 && p.getName().equals("name1")){
             p.setAddress(new Address("setting city"));
