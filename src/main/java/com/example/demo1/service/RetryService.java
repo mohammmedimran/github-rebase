@@ -21,6 +21,7 @@ public class RetryService {
         count++;
         System.out.println("testing");
         System.out.println("Attempting operation..."+count);
+        count++;
         if(count ==4 && p.getName().equals("name1")){
             p.setAddress(new Address("setting city"));
         }
