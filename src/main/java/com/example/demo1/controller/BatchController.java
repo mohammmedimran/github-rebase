@@ -53,23 +53,23 @@ public class BatchController {
                 person = new Person(i,"name1",null);
                 persons.add(person);
             }
-//            else if(i>=1 && i<=10){
-//                ad = new Address("bangalore");
-//                person = new Person(i,"name1",ad);
-//                persons.add(person);
-//            }else if(i>=11 && i<=14){
-//                ad = new Address("Bambay");
-//                Person person10 = new Person(i,"name2",ad);
-//                persons.add(person10);
-//            }else if(i>14 && i<=20){
-//                ad = new Address("Bambay");
-//                person = new Person(i,"name2",null);
-//                persons.add(person);
-//            }else{
-//                ad = new Address("Pune");
-//                person = new Person(i,"name3",ad);
-//                persons.add(person);
-//            }
+            else if(i>=1 && i<=10){
+                ad = new Address("bangalore");
+                person = new Person(i,"name1",ad);
+                persons.add(person);
+            }else if(i>=11 && i<=14){
+                ad = new Address("Bambay");
+                Person person10 = new Person(i,"name2",ad);
+                persons.add(person10);
+            }else if(i>14 && i<=20){
+                ad = new Address("Bambay");
+                person = new Person(i,"name2",null);
+                persons.add(person);
+            }else{
+                ad = new Address("Pune");
+                person = new Person(i,"name3",ad);
+                persons.add(person);
+            }
 
         }
         return persons;
