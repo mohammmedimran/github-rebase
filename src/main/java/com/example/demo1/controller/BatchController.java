@@ -44,6 +44,7 @@ public class BatchController {
         }
         return persons;
     }
+    //added comments
     private List<Person> getPersonList(){
         List<Person> persons = new ArrayList<>();
         Address ad;Person person;
