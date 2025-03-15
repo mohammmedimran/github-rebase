@@ -18,15 +18,15 @@ public class RetryService {
     private int id;
     @Retryable(value = { Exception.class }, maxAttempts = 3, backoff = @Backoff(delay = 500))
     public void update(Person p) {
-        System.out.println("testing");
+//        System.out.println("testing");
+//        System.out.println("testing123");
+//        count++;
+//        System.out.println("Attempting operation..."+count);
+//        if(count ==4 && p.getName().equals("name1")){
+//            p.setAddress(new Address("setting city"));
+//        }
+//        String city = p.getAddress().getCity();
         System.out.println("testing123");
-        count++;
-        System.out.println("Attempting operation..."+count);
-        if(count ==4 && p.getName().equals("name1")){
-            p.setAddress(new Address("setting city"));
-        }
-        String city = p.getAddress().getCity();
-
     }
 
 
